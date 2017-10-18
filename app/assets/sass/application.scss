@@ -37,3 +37,33 @@ $path: "/public/images/";
 .fw3 {
   font-weight: normal;
 }
+
+
+// Card payment pages
+
+.accepted-image {
+  position: relative;
+  max-width: 340px;
+  margin: -20px 0 5px 0;
+}
+
+.card-image {
+  max-height: 38px;
+  padding-top: 2px;
+  margin-left: 15px;
+  vertical-align: middle;
+}
+
+.payment-summary {
+  position: fixed;
+  width: 250px;
+  margin-top: 30px;
+  border: 10px solid #DEE0E2;
+  background-color: #F8F8F8;
+  padding: 15px;
+}
+
+.payment-summary h2 {
+  margin-top: 5px;
+
+}
