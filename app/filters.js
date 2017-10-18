@@ -8,7 +8,7 @@ module.exports = function (env) {
   var filters = {}
 
   filters.toDecimals2 = value => {
-    return Math.floor(value * 100) / 100
+    return (Math.floor(value * 100) / 100).toFixed(2)
   }
 
   /* ------------------------------------------------------------------
