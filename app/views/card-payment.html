@@ -104,7 +104,7 @@
 		    <h2 class="heading-medium">Payment summary</h2>
 		    <p>Historic service record</p>
 		    <h3 class="heading-small">Total amount:</h3>
-		    <p>{{data['payment-amount']/100}}</p>
+		    <p>£{{data['payment-amount'] | toDecimals2}}</p>
 	    </div>
     </div>
   </div>

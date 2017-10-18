@@ -7,6 +7,10 @@ module.exports = function (env) {
    */
   var filters = {}
 
+  filters.toDecimals2 = value => {
+    return Math.floor(value * 100) / 100
+  }
+
   /* ------------------------------------------------------------------
     add your methods to the filters obj below this comment block:
     @example:
