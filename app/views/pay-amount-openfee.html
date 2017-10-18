@@ -15,9 +15,15 @@
           Enter the amount
         </h1>
       </label>
-      <div class="font-large" style="margin-bottom: 30px;">
-        £
-        <input id="currency-input" type="number" class="font-large" name="amount">
+      <div class="currency-input form-group">
+        <label class="form-label" for="payment-amount">
+          Payment amount
+          <span class="visually-hidden">in &pound;</span>
+        </label>
+        <div class="currency-input__inner">
+          <span class="currency-input__inner__unit">&pound;</span>
+          <input class="form-control" aria-label="Enter amount in pounds" name="payment-amount" data-non-numeric type="text" id="payment-amount" value="{{protoPaymentAmount}}" autofocus data-validate="required currency">
+        </div>
       </div>
       <button type="submit" class="button">
         Continue

@@ -95,3 +95,20 @@ width:100%;
     -moz-box-shadow: 0 2px 2px rgba(11,12,12,0.4);
     box-shadow: 0 2px 2px rgba(11,12,12,0.4);
 }
+
+.currency-input {
+  &__inner {
+    position: relative;
+
+    &__unit {
+      position: absolute;
+      bottom: $gutter / 6;
+      left: $gutter / 3;
+      font-weight: bold;
+    }
+  }
+
+  .form-control {
+    padding: 6px 0 3px 25px;
+  }
+}
