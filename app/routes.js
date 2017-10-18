@@ -11,10 +11,13 @@ router.get('/', function (req, res) {
 })
 
 router.get('/pay-amount', (req, res) => {
-  const index = Math.floor(Math.random() * (amountPages.length - 1))
-  res.redirect(`/${amountPages[index]}`)
+  res.redirect(`/${amountPages[randomIntFromInterval(0, amountPages.length - 1)]}`)
 })
 
 // add your routes here
 
 module.exports = router
+
+function randomIntFromInterval (min, max) {
+  return Math.floor(Math.random() * (max - min + 1) + min);
+}
