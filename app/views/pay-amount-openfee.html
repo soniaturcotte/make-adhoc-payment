@@ -9,11 +9,17 @@
 <main id="content" role="main">
   <div class="grid-row">
     <div class="column-two-thirds">
-    <form action="/somet">
-      <label for="currency-input">
-        <h1 class="heading-xlarge">
-          Enter the amount
-        </h1>
+    
+    <h1 class="heading-large">
+      Enter the amount you owe
+    </h1>
+
+    <p></p>
+
+    <form action="/card-payment">
+      
+      <label class="form-label" for="currency-input">
+        <p>Amount you want to pay</p>
       </label>
       <div class="currency-input form-group">
         <label class="form-label" for="payment-amount">
@@ -27,7 +33,9 @@
       </div>
       <button type="submit" class="button">
         Continue
-      </button>
+        </button>
+      </div>
+
     </form>
 
 
