@@ -34,6 +34,14 @@ $path: "/public/images/";
   color: $secondary-text-colour;
 }
 
+.blue {
+  color: $govuk-blue;
+}
+
+.b--blue {
+  border-color: $govuk-blue;
+}
+
 .fw3 {
   font-weight: normal;
 }
