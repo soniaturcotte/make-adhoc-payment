@@ -1,2 +1,6 @@
 node_modules
 .idea
+.env
+govuk_modules/
+lib/govuk_template.html
+public
