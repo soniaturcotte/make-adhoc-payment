@@ -13,7 +13,7 @@
 
     <form action="payment-review" method="post" class="form">
 
-	    <h1 class="heading-xlarge">
+	    <h1 class="heading-large">
 	    Enter card details
 	    </h1>
 	   
@@ -27,7 +27,7 @@
         </div>
 
 		<div class="form-group">
-            <fieldset>
+
               <div class="form-date">
 	                <legend class="form-label-bold expiry-label">Expiry date <span class="form-hint">For example, 07/17</span>
 	                </legend>
@@ -41,7 +41,7 @@
 	                <input class="form-control" id="exp-year" name="exp-year" type="number" pattern="[0-9]*" min="17" max="25">
 	            </div>
             </div>
-            </fieldset>
+
         </div>
 
         <div class="form-group">
@@ -52,6 +52,7 @@
 		    <label class="form-label-bold" for="security-code">Card security code
 		    <span class="form-hint">The last 3 digits on the back of the card</span></label>
 		    <input class="form-control form-control-1-8" id="security-code" name="security-code" type="text">
+		    <img class="card-image" src="/public/images/card-security-code.png">
 		</div>
 		
 		<h2 class="heading-medium">
@@ -101,8 +102,7 @@
     <div class="column-one-third">
 	    <div class="payment-summary">
 		    <h2 class="heading-medium">Payment summary</h2>
-		    <p>Additional fee for Local Authority ceremony</p>
-		    <p>Applicant name: John Smith</p>
+		    <p>Historic service record</p>
 		    <h3 class="heading-small">Total amount:</h3>
 		    <p>£80.00</p>
 	    </div>
