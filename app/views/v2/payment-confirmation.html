@@ -1,0 +1,41 @@
+{% extends "layout.html" %}
+
+{% block page_title %}
+  Payment confirmation
+{% endblock %}
+
+{% block content %}
+
+<main id="content" role="main">
+  <div class="grid-row">
+    <div class="column-two-thirds">
+
+      <div class="govuk-box-highlight">
+        <h1 class="heading-xlarge">
+          Your payment was successful
+        </h1>
+        <p class="font-large">
+          Your reference number is <br>
+          <strong class="bold"><span class="ref-space">HDJ</span><span class="ref-space">212</span><span class="ref-space">3F</span></strong>
+        </p>
+      </div>
+
+      
+
+      <h2 class="heading-medium">What happens next</h2>
+      <p>
+        We have sent you a confirmation email.
+      </p>
+      
+      <p class="panel panel-border-wide">You must include your reference number with your application as proof of payment.</p>
+      
+      <a class="button mt4" href="https://www.gov.uk" role="button">Back to GOV.UK</a>
+
+
+    </div>
+  </div>
+</main>
+
+{% endblock %}
+
+

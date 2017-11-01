@@ -11,7 +11,7 @@
     <div class="column-two-thirds">
 
       <h1 class="heading-large">
-        Pay to request records of deceased service personnel
+        {{servicename}}
       </h1>
 
       <p>You can pay online for your application. Once you have successfully paid, you will receive a receipt with payment confirmation.</p> 
@@ -30,9 +30,25 @@
         <li>Submit your application</li>
       </ul> -->
 
-      <a class="button button-start" href="/pay-amount">
-        Start Now
-      </a>
+    <form action="/card-payment">
+      
+      <div class="currency-input form-group">
+        <label class="form-label" for="payment-amount">
+          Payment amount
+          <span class="visually-hidden">in &pound;</span>
+        </label>
+        <div class="currency-input__inner">
+          <span class="currency-input__inner__unit">&pound;</span>
+          <input class="form-control" aria-label="Enter amount in pounds" name="payment-amount" data-non-numeric type="text" id="payment-amount" value="{{protoPaymentAmount}}" autofocus data-validate="required currency">
+        </div>
+      </div>
+      <button type="submit" class="button">
+        Start now
+      </button>
+      </div>
+
+    </form>
+
 
     </div>
   </div>

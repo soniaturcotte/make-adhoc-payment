@@ -27,6 +27,10 @@ $path: "/public/images/";
     list-style-type: none;
   }
 }
+// Custom css 
+@import 'fake-tachyons';
+
+
 
 // Add extra styles here, or re-organise the Sass files in whichever way makes most sense to you
 
@@ -46,6 +50,14 @@ $path: "/public/images/";
   font-weight: normal;
 }
 
+
+
+// Confirmation page
+
+.ref-space {
+  padding-right: .35em;
+  letter-spacing: .05em;
+}
 
 // Card payment pages
 
@@ -112,3 +124,4 @@ width:100%;
     padding: 6px 0 3px 25px;
   }
 }
+
