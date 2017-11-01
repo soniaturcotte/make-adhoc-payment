@@ -11,7 +11,7 @@
     <div class="column-two-thirds">
 
       <h1 class="heading-large">
-        {{servicename}}
+         Pay to {% if serviceName %} {{ serviceName }} {% endif %}
       </h1>
 
       <p>You can pay online for your application. Once you have successfully paid, you will receive a receipt with payment confirmation.</p> 
@@ -30,10 +30,9 @@
         <li>Submit your application</li>
       </ul> -->
 
-    <form action="/card-payment">
-      
+    <form action="/v1/card-payment">
       <div class="currency-input form-group">
-        <label class="form-label" for="payment-amount">
+        <label class="form-label-bold" for="payment-amount">
           Payment amount
           <span class="visually-hidden">in &pound;</span>
         </label>
@@ -43,12 +42,10 @@
         </div>
       </div>
       <button type="submit" class="button">
-        Start now
+        Proceed to payment
       </button>
       </div>
-
     </form>
-
 
     </div>
   </div>

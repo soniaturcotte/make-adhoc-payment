@@ -11,30 +11,37 @@
     <div class="column-two-thirds">
 
       <h1 class="heading-large">
-        Include payment confirmation with your application 
+        Include confirmation phrase with your application
       </h1>
-      <p class="">
-       Your payment was successful. We will email you your payment confirmation in the next hour. Your reference:
-      </p>
 
-      <div class="panel panel-border-wide">
-        <p class="heading-medium ma0 pa0">
-          flower-jogging-19-10-17
+      <div class="reference-phrase">
+        <p class="heading-large">
+          fail jog first <span id="date"></span>
         </p>
       </div>
 
-      
-      <p class="">You must include payment confirmation when sending your application. You can include a printed receipt or write the reference number anywhere on your application.</p>
+      <p>You must include payment confirmation when sending your application. You will also recieve a email reciept.</p>
 
-      <button type="submit" class="button" style="font-family: 'nta', Arial, sans-serif;" onclick="window.print()">
-          Print receipt
-      </button>
-      <p class="mt4"><a href="historic-service-record">Download the form</a></span>
+      <a class="button mt4" href="https://www.gov.uk" role="button">Back to GOV.UK</a>
 
     </div>
   </div>
 </main>
 
+<script type="text/javascript">
+  var today = new Date()
+  var dd = today.getDate()
+  var mm = today.getMonth() + 1 // January is 0!
+
+  var yyyy = today.getFullYear()
+  if (dd < 10) {
+    dd = '0' + dd
+  }
+  if (mm < 10) {
+    mm = '0' + mm
+  } 
+  today = dd + '-' + mm + '-' + yyyy
+  document.getElementById('date').innerHTML = today
+</script>
+
 {% endblock %}
-
-

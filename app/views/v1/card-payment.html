@@ -102,7 +102,7 @@
     <div class="column-one-third">
 	    <div class="payment-summary">
 		    <h2 class="heading-medium">Payment summary</h2>
-		    <p>Record of deceased service personnel</p>
+		    <p>{% if serviceName %} {{ serviceName }} {% endif %}</p>
 		    <h3 class="heading-small">Total amount:</h3>
 		    <p>£{{data['payment-amount'] | toDecimals2}}</p>
 	    </div>
