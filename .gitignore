@@ -4,3 +4,4 @@ node_modules
 govuk_modules/
 lib/govuk_template.html
 public
+.DS_Store
