@@ -17,3 +17,14 @@ $(document).ready(function () {
   var showHideContent = new GOVUK.ShowHideContent()
   showHideContent.init()
 })
+
+// $('#last-step-form').submit(function (e) {
+//   const checkbox = $('#last-step-check:checked')
+//   if (!checkbox) {
+//     console.log('yes')
+//     $('#last-step-form').submit()
+//   } else {
+//     e.preventDefault()
+//     console.log('no!')
+//   }
+// })
