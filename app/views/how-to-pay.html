@@ -1,0 +1,35 @@
+{% extends "layout.html" %}
+
+{% block page_title %}
+  Pay to request records of deceased service personnel
+{% endblock %}
+
+{% block content %}
+
+<main id="content" role="main">
+  <div class="grid-row">
+    <div class="column-two-thirds">
+
+      <h1 class="heading-large">
+        Pay for {% if serviceName %} {{ serviceName }} {% endif %}
+      </h1>
+
+      <!-- <p>You can pay online for your application. Once you have successfully paid, you will receive a reference number.</p> 
+ -->
+    <div>
+      <img class="payment-steps pb4" src="/public/images/payment-steps.png">
+    </div>
+      <form action="enter-amount">
+        <button type="submit" class="button">
+          Continue
+        </button>
+        </div>
+      </form>
+
+
+
+    </div>
+  </div>
+</main>
+
+{% endblock %}
