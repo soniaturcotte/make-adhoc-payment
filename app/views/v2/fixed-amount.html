@@ -1,0 +1,41 @@
+{% extends "layout.html" %}
+
+{% block page_title %}
+  Pay to request records of deceased service personnel
+{% endblock %}
+
+{% block content %}
+
+<main id="content" role="main">
+  <div class="grid-row">
+    <div class="column-two-thirds">
+
+      <h1 class="heading-large">
+        Payment amount
+      </h1>
+
+    <form action="card-payment">
+      
+      <div class="currency-input form-group">
+        <div class="form-group">
+          <div class="panel panel-border-wide">
+            <!-- <h2 class="heading-small">Total amount:</h2> -->
+            <h2 class="data-item bold-xlarge pt3">£31.00</p>
+          </div>
+        </div>
+
+        <button type="submit" class="button">
+        Proceed to payment
+        </button>
+      </div>
+
+    </form>
+
+
+
+
+    </div>
+  </div>
+</main>
+
+{% endblock %}

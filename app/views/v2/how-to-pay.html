@@ -11,15 +11,20 @@
     <div class="column-two-thirds">
 
       <h1 class="heading-large">
-        Pay to {% if serviceName %} {{ serviceName }} {% endif %}
+        Pay for {% if serviceName %} {{ serviceName }} {% endif %}
       </h1>
 
-      <p>You can pay online for your application. Once you have successfully paid, you will receive a reference number.</p> 
-      <p class="panel panel-border-wide">You must include your reference number with your application as proof of payment.</p>
-
-      <br>   
-
-      <a class="button button-start" href="enter-amount" role="button">Start now</a>
+      <!-- <p>You can pay online for your application. Once you have successfully paid, you will receive a reference number.</p> 
+ -->
+    <div>
+      <img class="payment-steps pb4" src="/public/images/payment-steps.png">
+    </div>
+      <form action="fixed-amount">
+        <button type="submit" class="button">
+          Continue
+        </button>
+        </div>
+      </form>
 
 
 
