@@ -27,12 +27,12 @@
   letter-spacing: .05em;
 }
 
-.reference-phrase {
+.reference {
   margin-bottom: 1em;
   padding: 2em 1em;
   background-color: transparentize($green, .8);
   border-left: .5em solid $green;
-
+  
   p {
     margin: 0;
     color: $green;
