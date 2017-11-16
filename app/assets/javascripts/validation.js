@@ -43,7 +43,7 @@ function checkSelectors (errors) {
 
   $(document).find('input[type="radio"], input[type="checkbox"]').each(function () {
     var $fieldset = $(this).parents('fieldset')
-    var label = $fieldset.find('legend').clone().children().remove().end().text()
+    var label = $fieldset.find('.error-legend').clone().children().remove().end().text()
 
     if ($fieldset.attr('data-required') !== undefined && $fieldset.find(':checked').length === 0) {
       if ($(this).attr('id') === undefined) {
@@ -110,7 +110,7 @@ function appendErrorMessages (errors) {
             )
           }
         } else if ($fieldset.find('input[type="radio"]').length > 0 || $fieldset.find('input[type="checkbox"]')) {
-          $fieldset.find('legend').append(
+          $fieldset.find('.error-legend').append(
             '<span class="error-message">' +
               errors[i].errorMessage +
             '</span>'
