@@ -1,7 +1,7 @@
 {% extends "layout.html" %}
 
 {% block page_title %}
-  Pay to request records of deceased service personnel
+  Pay for {% if serviceName %} {{ serviceName }} {% endif %}
 {% endblock %}
 
 {% block content %}
