@@ -1,7 +1,7 @@
 {% extends "layout.html" %}
 
 {% block page_title %}
-  Pay to request records of deceased service personnel
+  Pay for {% if serviceName %} {{ serviceName }} {% endif %}
 {% endblock %}
 
 {% block content %}
@@ -14,12 +14,12 @@
         Pay for {% if serviceName %} {{ serviceName }} {% endif %}
       </h1>
 
-      <!-- <p>You can pay online for your application. Once you have successfully paid, you will receive a reference number.</p> 
- -->
-    <div>
+      <p>Once you have successfully paid, you will receive a payment reference number.</p> 
+
+    <!-- div>
       <img class="payment-steps pb4" src="/public/images/payment-steps.png">
-    </div>
-      <form action="fixed-amount">
+    </div> -->
+      <form action="enter-amount">
         <button type="submit" class="button">
           Continue
         </button>
