@@ -23,13 +23,22 @@ fieldset.error {
 }
 
 // Payment steps image
-
 .payment-steps {
+  position: relative;
+}
+
+.payment-steps-img {
   width: 100%;
 }
 
 .final-step {
   width: 60%;
+}
+
+.payment-steps-caption {
+  position: absolute;
+  width: 180px;
+  top: 180px;
 }
 
 // Confirmation page
