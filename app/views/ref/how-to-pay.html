@@ -1,0 +1,39 @@
+{% extends "layout.html" %}
+
+{% block page_title %}
+  Pay for {% if serviceName %} {{ serviceName }} {% endif %}
+{% endblock %}
+
+{% block content %}
+
+<main id="content" role="main">
+  <div class="grid-row">
+    <div class="column-two-thirds">
+
+      <h1 class="heading-large">
+        Pay for {% if serviceName %} {{ serviceName }} {% endif %}
+      </h1>
+
+      <p>[This is an optional paragraph filled in by the service when setting up a payment link]</p> 
+
+      <div class="form-group">
+        <label class="form-label form-label-bold" for="full-name-f1">Reference number</label>
+        <input class="form-control" id="full-name-f1" type="text" name="ref-number">
+      </div>
+
+      
+
+      <form action="enter-amount">
+        <button type="submit" class="button mt3">
+          Continue
+        </button>
+        </div>
+      </form>
+
+
+
+    </div>
+  </div>
+</main>
+
+{% endblock %}

@@ -1,0 +1,49 @@
+{% extends "layout.html" %}
+
+{% block page_title %}
+  Your payment was successful
+{% endblock %}
+
+{% block content %}
+
+<main id="content" role="main">
+  <div class="grid-row">
+    <div class="column-two-thirds">
+
+      <div class="govuk-box-highlight pa3">
+        <h1 class="heading-xlarge mb5">
+          Your payment was successful
+        </h1>
+        <p class="font-large">
+          Your payment reference number is <br>
+          <strong class="bold"><span class="ref-space">HDJ</span><span class="ref-space">212</span><span class="ref-space">3F</span></strong>
+        </p>
+      </div>
+      
+      <h2 class="heading-medium">What happens next</h2>
+      <p>
+        We have sent you a confirmation email.
+      </p>
+
+    <h2 class="heading-medium">Payment summary</h2>
+    <table class="mb2">
+        <tbody>
+          <tr>
+            <td>Payment for:</td>
+            <td class="table-info">{% if serviceName %} {{ serviceName }} {% endif %}</td>
+          </tr>
+          <tr>
+            <td>Total amount:</td>
+            <td class="table-info">£{{data['payment-amount'] | toDecimals2}}</td>
+          </tr>
+        </tbody>
+
+      </table>
+      
+     
+
+    </div>
+  </div>
+</main>
+
+{% endblock %}
