@@ -16,14 +16,21 @@
 
       <p>[This is an optional paragraph filled in by the service when setting up a payment link]</p> 
 
-      <div class="form-group">
-        <label class="form-label form-label-bold" for="full-name-f1">Reference number</label>
-        <input class="form-control" id="full-name-f1" type="text" name="ref-number">
-      </div>
+      
 
       
 
       <form action="enter-amount">
+
+        <div class="form-group">
+          <label class="form-label form-label-bold" for="ref-number">Reference number 
+            <span class="form-hint">
+            
+            </span>
+          </label>
+          <input class="form-control" id="ref-number" type="text" name="user-ref-number">
+        </div>
+        
         <button type="submit" class="button mt3">
           Continue
         </button>
