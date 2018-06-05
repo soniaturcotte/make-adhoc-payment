@@ -11,25 +11,28 @@
     <div class="column-two-thirds">
 
       <h1 class="heading-large">
-        Pay for {% if serviceName %} {{ serviceName }} {% endif %}
+        Pay the Congestion Charge
       </h1>
 
-      <p>[This is an optional paragraph filled in by the service when setting up a payment link]</p> 
-
-      
-
-      
+      <p>The Congestion Charge is an £11.50 daily charge for driving a vehicle within the charging zone between 07:00 and 18:00, Monday to Friday.</p>
+         
+      <p>Enter the vehicle registration accurately. Incorrect information may mean you are issued with a Penalty Charge Notice.</p>   
 
       <form action="enter-amount">
+        <fieldset data-required data-error="Enter a vehicle registration">
+          <div class="form-group">
 
-        <div class="form-group">
-          <label class="form-label form-label-bold" for="ref-number">Form label set by service team 
-            <span class="form-hint">
-            Hint text set by service team (optional)
-            </span>
-          </label>
-          <input class="form-control" id="ref-number" type="text" name="user-ref-number">
-        </div>
+          <label class="form-label form-label-bold" for="ref-number">Vehicle registration 
+             <span class="form-hint">
+             Be careful not to mix up the letters 'I' and 'O' with the numbers '1' and '0'
+             </span>
+           </label>
+
+           <input class="form-control" id="ref-number" type="text" name="user-ref-number">
+
+
+          </div>
+        <fieldset>
 
         <button type="submit" class="button mt3">
           Continue

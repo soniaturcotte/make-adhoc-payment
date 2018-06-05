@@ -11,32 +11,26 @@
     <div class="column-two-thirds">
 
       <h1 class="heading-large">
-         Enter the amount you want to pay
+        Payment amount
       </h1>
 
-    <form action="card-payment">
-      
-      <fieldset data-required data-error="Enter a valid payment amount">
-        
-        <div class="heading-small error-legend"></div>
-
-        <div class="currency-input form-group">
-          <label class="form-label-bold" for="payment-amount">
-            Payment amount
-            <span class="visually-hidden">in &pound;</span>
-          </label>
-          <div class="currency-input__inner">
-            <span class="currency-input__inner__unit">&pound;</span>
-            <input class="form-control" aria-label="Enter amount in pounds" name="payment-amount" data-non-numeric type="text" id="payment-amount" value="{{protoPaymentAmount}}" autofocus data-validate="required currency">
-          </div>
+    <form action="https://products.payments.service.gov.uk/pay/fee710e167894af3903ffee0439baf31">
+      <div class="currency-input form-group">
+        <label class="heading-large" for="payment-amount">
+          <span class="visually-hidden"> Payment amount in &pound;</span>
+        </label>
+        <div class="panel panel-border-wide mt3">
+          <h2 class="set-fee">
+            £11.30
+          </p>
         </div>
-
-        <button type="submit" class="button">
-          Proceed to payment
-        </button>
       </div>
-        </fieldset>
+
+      <button type="submit" class="button">
+        Proceed to payment
+      </button>
     </form>
+
 
     </div>
   </div>
