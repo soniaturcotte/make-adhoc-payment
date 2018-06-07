@@ -86,7 +86,7 @@ function appendErrorMessages (errors) {
   for (var i = 0; i < errors.length; i++) {
     if ($(document).find('a[href="#' + errors[i].id + '"]').length === 0) {
       $('.error-summary-list').append(
-        '<li><a href="#' + errors[i].id + '">' + errors[i].label + '  ' + errors[i].errorMessage + '</a></li>'
+        '<li><a href="#' + errors[i].id + '">' + errors[i].label + '</a></li>'
       )
       var $fieldset = $(document).find('#' + errors[i].id).parents('fieldset')
       $fieldset.addClass('error')
